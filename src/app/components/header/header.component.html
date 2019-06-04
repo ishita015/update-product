@@ -1,5 +1,5 @@
 <header class="main_header_area ">
-  <div [ngClass]="isShow == true ? 'inner-header' : '' ">
+  <div>
     <div class="container-fluid">
       <div class="pull-left" style="padding-top: 2px;
       padding-bottom: 1px;">
@@ -13,7 +13,7 @@
           </button>
           <ul class="dropdown-menu" aria-labelledby="dLabel" style="left: -45px; padding:5px">
             <li><a class="profile" routerLink="/profile">My Profile</a></li>
-            <li><a class="profile" (click)="logout()">Logout</a></li>
+            <li><a class="profile">Logout</a></li>
           </ul>
         </div>
       </div>
@@ -47,8 +47,8 @@
             <li class="active"><a routerLink="/home"> Home <i class="fa fa-home" aria-hidden="true"></i></a></li>
             <!-- <li><a routerLink="/about"> About Us <i class="fas fa-info-circle"></i></a></li>
             <li><a routerLink="/contact"> Contact Us <i class="fa fa-phone" aria-hidden="true"></i></a></li> -->
-            <li><a routerLink="/" (click)="openModal()"> Create Lr <i class="fa fa-file-text"
-                  aria-hidden="true"></i></a></li>
+            <!-- <li><a routerLink="/"> Create Lr <i class="fa fa-file-text"
+                  aria-hidden="true"></i></a></li> -->
             <li>
               <a>
                 <div class="dropdown">
@@ -62,7 +62,7 @@
               </a>
             </li>
             <li><a href="#/dashboard">Dashboard</a></li>
-            <li (click)="logout()"><a href="#">Log out</a></li>
+            <li ><a href="#">Log out</a></li>
           </ul>
 
         </div>
